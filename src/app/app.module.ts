@@ -5,6 +5,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProductsComponent } from './products/products.component';
+import { UsersComponent } from './users/users.component';
 
 @NgModule({
   declarations: [
@@ -12,6 +13,7 @@ import { ProductsComponent } from './products/products.component';
     ContactFormComponent,
     ContactFormComponent,
     ProductsComponent,
+    UsersComponent,
   ],
   imports: [
     BrowserModule,
