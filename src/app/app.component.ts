@@ -6,5 +6,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'tse-td-angular';
+  title = 'TP Angular DE3';
+  school = 'Télécom Saint-Etienne';
+  name = 'Thomas JAULGEY';
 }

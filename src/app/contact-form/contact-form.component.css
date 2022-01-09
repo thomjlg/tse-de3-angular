@@ -1,0 +1,38 @@
+div{
+    font-family: system-ui;
+    font-size:0.9rem;
+    margin:1rem;
+}
+
+input, textarea{
+    border:0px;
+    padding:5px;
+    background-color:#eee;
+    font-family: system-ui;
+    width:15rem;
+}
+
+button{
+    padding:5px;
+    background-color: #03234b;
+    color:white;
+    border:2px solid #03234b;
+    cursor:pointer;
+    font-size:12px;
+}
+
+button:hover{
+    background-color: white;
+    color:#03234b;
+}
+
+button:disabled{
+    cursor: not-allowed;
+    background-color:lightgrey;
+    border:2px solid lightgray;
+    color:grey;
+}
+
+button:disabled:hover{
+    color:grey;
+}
