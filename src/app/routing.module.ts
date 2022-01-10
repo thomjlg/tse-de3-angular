@@ -5,7 +5,6 @@ import { OrdersComponent } from './orders/orders.component';
 import { UsersComponent } from './users/users.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 
-
 const routes: Routes = [
   { path: 'product', component: ProductsComponent },
   { path: 'order', component: OrdersComponent },

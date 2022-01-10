@@ -3,16 +3,18 @@
 </header>
 
 
-<!-- products list -->
-<products></products>
 
-<!-- users list -->
-<users></users>
+<nav>
+  <ul>
+    <li><a routerLink="/">Accueil</a></li>
+    <li><a routerLink="/order">Commandes</a></li>
+    <li><a routerLink="/user">Utilisateurs</a></li>
+    <li><a routerLink="/product">Produits</a></li>
+    <li><a routerLink="/contact-form">Formulaire de contact</a></li>
+  </ul>
+</nav>
 
-<!-- orders list -->
-<orders></orders>
+<router-outlet></router-outlet>
 
-<!-- contact form -->
-<contact-form></contact-form>
 
 <footer> &copy; 2021 - {{ school }} - {{ name }} </footer>

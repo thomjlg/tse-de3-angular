@@ -21,6 +21,7 @@ import { OrdersComponent } from './orders/orders.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
+    AppRoutingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
