@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { ContactFormComponent } from './contact-form/contact-form.component';
 import { ProductsComponent } from './products/products.component';
 import { UsersComponent } from './users/users.component';
+import { OrdersComponent } from './orders/orders.component';
 
 @NgModule({
   declarations: [
@@ -14,6 +15,7 @@ import { UsersComponent } from './users/users.component';
     ContactFormComponent,
     ProductsComponent,
     UsersComponent,
+    OrdersComponent,
   ],
   imports: [
     BrowserModule,

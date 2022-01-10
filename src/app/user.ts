@@ -3,4 +3,5 @@ export interface User {
     prenom: string;
     nom: string;
     age: number;
+    nationalite: string;
   }

@@ -3,17 +3,14 @@
   <li *ngFor="let product of products"
     [class.selected]="product === selectedProduct"
     (click)="onSelect(product)">
-    <span class="badge">{{product.id}}</span> {{product.name}}
+    <span class="badge">{{product.name}}</span> 
   </li>
 </ul>
 
 <div *ngIf="selectedProduct">
 
   <h4>{{selectedProduct.name | uppercase}} Details</h4>
-  <div><span>id: </span>{{selectedProduct.id}}</div>
-  <div>
-    <label for="product-name">Product name: </label>
-    <input id="product-name" [(ngModel)]="selectedProduct.name" placeholder="name">
-  </div>
+  <div><span>ID : </span>{{selectedProduct.id}}</div>
+  <div><span>Nom du produit : </span>{{selectedProduct.name}}</div>
 
 </div>

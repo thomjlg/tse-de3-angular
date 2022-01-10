@@ -9,19 +9,9 @@
 
 <div *ngIf="selectedUser">
 
-  <h4>{{selectedUser.nom | uppercase}} Details</h4>
-  <div><span>id: </span>{{selectedUser.id}}</div>
-  <div>
-    <label for="user-nom">Nom: </label>
-    <input id="user-nom" [(ngModel)]="selectedUser.nom" placeholder="name">
-  </div>
-  <div>
-    <label for="user-nom">Prenom: </label>
-    <input id="user-nom" [(ngModel)]="selectedUser.prenom" placeholder="name">
-  </div>
-  <div>
-    <label for="user-nom">Age: </label>
-    <input id="user-nom" [(ngModel)]="selectedUser.age" placeholder="age">
-  </div>
+  <h4>Informations concernant {{selectedUser.nom | uppercase}} {{selectedUser.prenom}} </h4>
+  <div><span>Age : </span>{{selectedUser.age}}</div>
+  <div><span>Nationalité : </span>{{selectedUser.nationalite}}</div>
+
 
 </div>

@@ -1,0 +1,18 @@
+<h2>List of Orders</h2>
+<ul class="orders">
+  <li *ngFor="let order of orders"
+    [class.selected]="order === selectedOrder"
+    (click)="onSelect(order)">
+    <span class="badge">{{order.numero_commande}}</span> {{order.nom}} 
+  </li>
+</ul>
+
+<div *ngIf="selectedOrder">
+
+  <h4>Détails de la commande n°{{selectedOrder.numero_commande}}</h4>
+  <div><span>Nom du client : </span>{{selectedOrder.nom}}</div>
+  <div><span>Quantité et tarif : </span>{{selectedOrder.nb_produits}} produit(s) pour un total de {{selectedOrder.tarif}}€</div>
+  <div><span>Etat du paiement : </span>{{selectedOrder.paiement_effectue}}</div>
+
+
+</div>
