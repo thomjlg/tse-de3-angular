@@ -1,0 +1,51 @@
+ul{
+    padding: 0;
+    list-style-type: none;
+    margin:0 0 0 2rem;
+    width:fit-content;
+    padding-right:calc(1rem + 2px);
+}
+
+li:hover{
+    background-color:#3CB4E6;
+    transition: all 0.8s;
+}
+
+li{
+    margin:0.8rem 0;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 100%;
+    padding:0.5rem 0.5rem;
+    text-align: center;
+}
+
+.badge{
+    font-style:italic;
+}
+
+.flex{
+    display: flex;
+}
+
+.detail-users{
+    background-color:#ffd200;
+    flex-grow:1;
+    padding: 1rem 0 2rem 2rem;
+    margin-left: 5rem;
+    height:fit-content;
+}
+
+.detail-users div{
+    font-weight:bold;
+    font-style: italic;
+}
+
+.detail-users span{
+    font-weight:normal;
+}
+
+p, h2{
+    margin-left: 2rem;
+    color:#03234b;
+}

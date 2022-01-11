@@ -3,8 +3,12 @@ ul{
     list-style-type: none;
     margin:0 0 0 2rem;
     width:fit-content;
-    background-color:red;
     padding-right:calc(1rem + 2px);
+}
+
+li:hover{
+    background-color:#3CB4E6;
+    transition: all 0.8s;
 }
 
 li{
@@ -27,4 +31,21 @@ li{
 .detail-order{
     background-color:#ffd200;
     flex-grow:1;
+    padding: 1rem 0 2rem 2rem;
+    margin-left: 5rem;
+    height:fit-content;
+}
+
+.detail-order div{
+    font-weight:bold;
+    font-style: italic;
+}
+
+.detail-order span{
+    font-weight:normal;
+}
+
+p, h2{
+    margin-left: 2rem;
+    color:#03234b;
 }

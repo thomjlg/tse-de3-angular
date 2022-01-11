@@ -1,16 +1,20 @@
-<h2>List of Products</h2>
-<ul class="products">
-  <li *ngFor="let product of products"
-    [class.selected]="product === selectedProduct"
-    (click)="onSelect(product)">
-    <span class="badge">{{product.name}}</span> 
-  </li>
-</ul>
+<h2>Liste des produits</h2>
+<p><i>Cliquez sur un produit pour en voir le détail</i></p>
 
-<div *ngIf="selectedProduct">
-
-  <h4>{{selectedProduct.name | uppercase}} Details</h4>
-  <div><span>ID : </span>{{selectedProduct.id}}</div>
-  <div><span>Nom du produit : </span>{{selectedProduct.name}}</div>
-
+<div class=flex>
+  <ul class="products">
+    <li *ngFor="let product of products"
+      [class.selected]="product === selectedProduct"
+      (click)="onSelect(product)">
+      <span class="badge">{{product.name}}</span> 
+    </li>
+  </ul>
+  
+  <div class=detail-product *ngIf="selectedProduct">
+  
+    <h4>Plus d'informations : {{selectedProduct.name | lowercase}}</h4>
+    <div><span>ID : </span>{{selectedProduct.id}}</div>
+    <div><span>Nom du produit : </span>{{selectedProduct.name}}</div>
+  
+  </div>
 </div>

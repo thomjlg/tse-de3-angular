@@ -1,17 +1,22 @@
 <h2>List of Users</h2>
-<ul class="users">
-  <li *ngFor="let user of users"
-    [class.selected]="user === selectedUser"
-    (click)="onSelect(user)">
-    <span class="badge">{{user.nom}}</span> {{user.prenom}}
-  </li>
-</ul>
-
-<div *ngIf="selectedUser">
-
-  <h4>Informations concernant {{selectedUser.nom | uppercase}} {{selectedUser.prenom}} </h4>
-  <div><span>Age : </span>{{selectedUser.age}}</div>
-  <div><span>Nationalité : </span>{{selectedUser.nationalite}}</div>
+<p><i>Sélectionnez un utiliasteur pour voir plus d'Informations le concernant</i></p>
 
 
+<div class=flex>
+  <ul class="users">
+    <li *ngFor="let user of users"
+      [class.selected]="user === selectedUser"
+      (click)="onSelect(user)">
+      <span class="badge">{{user.nom | uppercase}}</span> {{user.prenom}}
+    </li>
+  </ul>
+  
+  <div class=detail-users *ngIf="selectedUser">
+  
+    <h4>Informations concernant : {{selectedUser.nom | uppercase}} {{selectedUser.prenom}} </h4>
+    <div><span>Age : </span>{{selectedUser.age}}</div>
+    <div><span>Nationalité : </span>{{selectedUser.nationalite}}</div>
+  
+  
+  </div>
 </div>
