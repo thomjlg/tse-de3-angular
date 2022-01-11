@@ -1,11 +1,6 @@
 <header>
-  {{ title }}
-</header>
-
-
-<div class=flex>
+  <div class=title>{{ title }}</div>
   <nav>
-    <div class=title-menu>MENU</div>
     <ul>
       <li><a routerLink="/">Accueil</a></li>
       <li><a routerLink="/order">Commandes</a></li>
@@ -14,11 +9,16 @@
       <li><a routerLink="/contact-form">Formulaire de contact</a></li>
     </ul>
   </nav>
-  <div class=items>
-    <router-outlet></router-outlet>
-  </div>
-  
+</header>
+
+
+
+
+<div class=items>
+  <router-outlet></router-outlet>
 </div>
+  
+
 
 
 

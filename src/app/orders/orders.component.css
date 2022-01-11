@@ -1,0 +1,30 @@
+ul{
+    padding: 0;
+    list-style-type: none;
+    margin:0 0 0 2rem;
+    width:fit-content;
+    background-color:red;
+    padding-right:calc(1rem + 2px);
+}
+
+li{
+    margin:0.8rem 0;
+    cursor: pointer;
+    border: 1px solid black;
+    width: 100%;
+    padding:0.5rem 0.5rem;
+}
+
+.badge{
+    margin-right:1rem;
+    font-style:italic;
+}
+
+.flex{
+    display: flex;
+}
+
+.detail-order{
+    background-color:#ffd200;
+    flex-grow:1;
+}
