@@ -17,12 +17,20 @@ export class ContactFormComponent implements OnInit {
     this.logger.log('page initialized')
   }
 
-  validate(): void {
-    this.logger.log('Login : ' + this.login);
-    this.logger.log('message : ' + this.message);
-    
+  isValidEmail(variable: string) {
+    const re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(String(variable).toLowerCase());
+  }
 
-    alert('Your message has been sent ! \n\n login : ' + this.login + '\n\n message : ' + this.message)
+  validate(): void {    
+    if(this.isValidEmail(this.login) && this.message.length != 0){
+      this.logger.log('Login : ' + this.login);
+      this.logger.log('message : ' + this.message);
+      alert('Your message has been sent ! \n\n login : ' + this.login + '\n message : ' + this.message)
+    }
+    else{
+      alert('Your message has not been sent ! \n\nPlease enter valid email and message!')
+    }
   }
 
   
