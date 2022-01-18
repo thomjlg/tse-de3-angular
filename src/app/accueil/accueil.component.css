@@ -1,0 +1,8 @@
+p{
+    text-align: center;
+}
+
+p:nth-child(2){
+    font-weight: bold;
+    font-style: italic;
+}
