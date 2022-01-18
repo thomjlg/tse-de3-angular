@@ -3,7 +3,7 @@ import { Product } from './product';
 export const PRODUCTS: Product[] = [
   { id: 1, name: 'chocolat', prix: 3.5, description: 'chocolat noir 100%' },
   { id: 2, name: 'orange', prix: 4.99, description: 'lot de 1kg  d\'oranges pur jus' },
-  { id: 3, name: 'téléphone', prix: 1299, description: 'L’iPhone ultime. Super. Puissant. Toujours aussi doué.Super iPhone. Super prix.' },
+  { id: 3, name: 'téléphone', prix: 1299, description: 'Le smartphonen ultime. Super. Puissant. Super prix.' },
   { id: 4, name: 'ordinateur', prix: 2249, description: 'Nouveau PC 14". Superpuissance pour les pros.' },
   { id: 5, name: 'salade', prix: 1.99, description: 'laitue iceberg, déjà lavée' },
   { id: 6, name: 'riz', prix: 2.50, description: 'paquet de 1kg' },
