@@ -12,9 +12,12 @@
   
   <div class=detail-product *ngIf="selectedProduct">
   
-    <h4>Plus d'informations : {{selectedProduct.name | lowercase}}</h4>
+    <h4>Plus d'informations :</h4>
     <div><span>ID : </span>{{selectedProduct.id}}</div>
-    <div><span>Nom du produit : </span>{{selectedProduct.name}}</div>
+    <div><span>Nom du produit : </span>{{selectedProduct.name | lowercase}}</div>
+    <br />
+    <div><span>Prix : </span>{{selectedProduct.prix}}€</div>
+    <div><span>Description : </span>{{selectedProduct.description}}</div>
   
   </div>
 </div>

@@ -4,4 +4,6 @@ export interface User {
     nom: string;
     age: number;
     nationalite: string;
+    metier: string;
+    team: string;
   }
